@@ -144,7 +144,7 @@ public class MenuUtama extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(46, 46, 46)
                 .addComponent(lblUser)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 631, Short.MAX_VALUE)
                 .addComponent(btnRegister)
                 .addGap(43, 43, 43))
         );
@@ -378,6 +378,11 @@ public class MenuUtama extends javax.swing.JFrame {
 
         penjualan.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\penjualan-15.png")); // NOI18N
         penjualan.setText("penjualan");
+        penjualan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                penjualanActionPerformed(evt);
+            }
+        });
         Transaksi.add(penjualan);
 
         jMenuBar1.add(Transaksi);
@@ -523,7 +528,7 @@ JOptionPane.showMessageDialog(null, "Gagal Koneksi");
     }//GEN-LAST:event_btnMasukActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-       // TODO add your handling code here:
+new FormLaporanTransaksi().setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void rkplapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rkplapActionPerformed
@@ -533,6 +538,10 @@ new FormLaporanTransaksi().setVisible(true);        // TODO add your handling co
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
 new FormAbout().setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void penjualanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_penjualanActionPerformed
+ new FormPenjualan().setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_penjualanActionPerformed
     
    
     /**

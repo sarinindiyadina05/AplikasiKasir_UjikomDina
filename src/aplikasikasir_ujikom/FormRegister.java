@@ -210,7 +210,6 @@ clear();// TODO add your handling code here:
     }//GEN-LAST:event_btnSimpanActionPerformed
 
     private void btnBatalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBatalActionPerformed
-new MenuUtama().setVisible(true);     
 this.dispose();// TODO add your handling code here:
     }//GEN-LAST:event_btnBatalActionPerformed
 
